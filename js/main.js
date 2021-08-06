@@ -2,16 +2,12 @@ const form = document.getElementById('form');
 const db = firebase.firestore();
 const username = document.getElementById('username');
 var elemento = document.getElementById("alert");
-
 form.addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault();   
     let users = Array({
         usuario: username.value,
     });
-    localStorage.setItem('user', JSON.stringify(users));    
-     db.collection('usuarios').doc().set({           
-           username.value,
-        })   
+    localStorage.setItem('user', JSON.stringify(users));
     location.href = 'ruta/home.html'
 });
 
