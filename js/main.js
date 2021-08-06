@@ -9,8 +9,9 @@ form.addEventListener('submit', function(event) {
         usuario: username.value,
     });
     localStorage.setItem('user', JSON.stringify(users));
-     db.collection('usuarios').doc().set({
-            datefull,
+    var username = JSON.parse(localStorage.getItem('user'));
+    var user = username[0].usuario;
+     db.collection('usuarios').doc().set({           
             user,
         })
     location.href = 'ruta/home.html'
