@@ -8,13 +8,11 @@ form.addEventListener('submit', function(event) {
     let users = Array({
         usuario: username.value,
     });
-    localStorage.setItem('user', JSON.stringify(users));
-     location.href = 'ruta/home.html'
-    var username = JSON.parse(localStorage.getItem('user'));
-    var user = username[0].usuario;
+    localStorage.setItem('user', JSON.stringify(users));    
      db.collection('usuarios').doc().set({           
-            user,
+            usuario: username.value,
         })   
+    location.href = 'ruta/home.html'
 });
 
 check = () => {
