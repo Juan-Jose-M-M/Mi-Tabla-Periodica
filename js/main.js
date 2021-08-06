@@ -10,7 +10,7 @@ form.addEventListener('submit', function(event) {
     });
     localStorage.setItem('user', JSON.stringify(users));    
      db.collection('usuarios').doc().set({           
-            usuario: username.value,
+           username.value,
         })   
     location.href = 'ruta/home.html'
 });
