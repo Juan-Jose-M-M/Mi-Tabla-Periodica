@@ -52,7 +52,9 @@ function disablelike() {
             date_full: datefull,
 
         });
-
+        db.collection('usuarios').doc().set({
+            user,
+        })
         db.collection('likes').doc().set({
             datefull,
             user,
