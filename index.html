@@ -151,6 +151,25 @@
             <a href="ruta/terminos-condiciones.html">Términos y Condiciones</a>
         </p>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCEBsvHElqQqn0AGoqTrtpjb9_DLlv2dD4",
+            authDomain: "control-lik-fb.firebaseapp.com",
+            projectId: "control-lik-fb",
+            storageBucket: "control-lik-fb.appspot.com",
+            messagingSenderId: "520556160806",
+            appId: "1:520556160806:web:d6e789384104a9a116c3e7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="js/main.js"></script>
     <script>
         window.onload = function carga() {
