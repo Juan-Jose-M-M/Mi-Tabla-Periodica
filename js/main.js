@@ -1,5 +1,4 @@
 const form = document.getElementById('form');
-const db = firebase.firestore();
 const username = document.getElementById('username');
 var elemento = document.getElementById("alert");
 form.addEventListener('submit', function(event) {
