@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const db = firebase.firestore();
 const username = document.getElementById('username');
 var elemento = document.getElementById("alert");
 
@@ -8,6 +9,10 @@ form.addEventListener('submit', function(event) {
         usuario: username.value,
     });
     localStorage.setItem('user', JSON.stringify(users));
+     db.collection('usuarios').doc().set({
+            datefull,
+            user,
+        })
     location.href = 'ruta/home.html'
 });
 
