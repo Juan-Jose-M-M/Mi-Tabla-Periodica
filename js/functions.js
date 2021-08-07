@@ -111,7 +111,7 @@ function mensaje() {
         txt,
     })
     elemento.className = "alert alert-warning d-flex align-items-center txtalert";
-    document.getElementById("alertmen").innerHTML = "<p>Comentario enviado de manera exitosa. Con tu aporte ayudas a este desarrollador a seguir creciendo.</p>";
+    document.getElementById("alertmen").innerHTML = "<p>Comentario enviado de manera exitosa. Con tu comentario ayudas a este desarrollador a seguir creciendo.</p>";
     document.getElementById("btnmen").disabled = true;
     console.log(men);
 }
@@ -123,7 +123,7 @@ alert = () => {
     var contador = parseInt(cont, 10);
     if (contador => 1) {
         elemento.className = "alert alert-info d-flex align-items-center txtalert";
-        document.getElementById("alert").innerHTML = "<p>Gracias por tú me gusta. Recuerda que solo puedes dar me gusta una vez.</p>";
+        document.getElementById("alert").innerHTML = "<p>Gracias por tú me gusta. Solo puedes dar me gusta una vez.</p>";
         document.getElementById("btnlike").disabled = true;
     }
 }
@@ -136,10 +136,10 @@ alert2 = () => {
     if (text = !null) {
         elemento1.className = "alert alert-warning d-flex align-items-center txtalert";
         elemento2.className = "alert alert-info d-flex align-items-center txtalert";
-        document.getElementById("alertmen").innerHTML = "<p>Gracias '" + user + "' por tu comentario. Recuerda que solo puedes realizar un comentario.</p>";
+        document.getElementById("alertmen").innerHTML = "<p>Gracias '" + user + "' por tu comentario. Solo puedes realizar un comentario.</p>";
         document.getElementById("alertmen2").innerHTML = "<p>Fecha de envio : " + fechaa + "</p>";
         document.getElementById("btnmen").disabled = true;
-        document.getElementById("txtmensaje").innerHTML = "Comentario enviado el : ' " + txt + " ' ";
+        document.getElementById("txtmensaje").innerHTML = "Comentario enviado : ' " + txt + " ' ";
         document.getElementById("txtmensaje").disabled = true;
     }
 }
