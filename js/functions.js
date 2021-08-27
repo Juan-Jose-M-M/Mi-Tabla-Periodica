@@ -99,8 +99,7 @@ function mensaje() {
     var datefull = day[date.getDay()] + " " + fech + " " + month[date.getMonth()] + " " + año + " " + hora + ":" + minute;
 
     let men = Array({
-        texto: mensaj.value,
-        fec: datefull,
+        texto: mensaj.value,    
     });
     localStorage.setItem('comentario', JSON.stringify(men));
     let text = JSON.parse(localStorage.getItem('comentario'));
