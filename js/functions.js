@@ -108,7 +108,7 @@ function mensaje() {
     db.collection('comentario').doc().set({
         datefull,
         user,
-        txt,
+        mensaj.value,
     })
     elemento.className = "alert alert-warning d-flex align-items-center txtalert";
     document.getElementById("alertmen").innerHTML = "<p>Comentario enviado de manera exitosa. Con tu comentario ayudas a este desarrollador a seguir creciendo.</p>";
