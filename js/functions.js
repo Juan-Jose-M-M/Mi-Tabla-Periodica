@@ -100,7 +100,7 @@ function mensaje() {
 
     let men = Array({
         texto: mensaj.value,
-        datefull,
+        fec: datefull,
     });
     localStorage.setItem('comentario', JSON.stringify(men));
     let text = JSON.parse(localStorage.getItem('comentario'));
