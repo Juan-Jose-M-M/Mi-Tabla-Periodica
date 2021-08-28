@@ -105,9 +105,9 @@ function mensaje() {
     localStorage.setItem('comentario', JSON.stringify(men));
     let text = JSON.parse(localStorage.getItem('comentario'));
     let txt = text[0].texto;
-    db.collection('comenta').doc().set({
+    db.collection('comentario').doc().set({
         datefull,
-txt,
+text,
         user,
     })
     elemento.className = "alert alert-warning d-flex align-items-center txtalert";
