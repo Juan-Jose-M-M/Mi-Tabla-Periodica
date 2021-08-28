@@ -105,7 +105,7 @@ function mensaje() {
     localStorage.setItem('comentario', JSON.stringify(men));
     let text = JSON.parse(localStorage.getItem('comentario'));
     let txt = text[0].texto;
-    db.collection('comentario').doc().set({
+    db.collection('comenta').doc().set({
         datefull,
 txt,
         user,
